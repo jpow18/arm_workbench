@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arm-workbench"
+version = "0.1.0"
+description = "Simulation-first, task-oriented workbench for AI-assisted robot arms"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+arm-workbench = "arm_workbench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
